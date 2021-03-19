@@ -1,0 +1,11 @@
+server:
+  port: ${SERVER_PORT:8080}
+spring:
+  application.name: ${APPLICATION_NAME:spring-security-keycloak}
+keycloak:
+  auth-server-url: http://localhost:8484/auth
+  realm: my_realm
+  resource: my_client
+  public-client: true
+#  bearer-only: true
+
