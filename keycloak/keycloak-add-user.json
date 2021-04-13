@@ -1,0 +1,34 @@
+[ {
+  "realm" : "my_realm",
+  "users" : [ {
+    "username" : "user",
+    "enabled" : true,
+    "credentials" : [ {
+      "type" : "password",
+      "secretData" : "{\"value\":\"bNcr3LigRBY4/zy4HdI/lvN6Pl0MpaMya7CB5nRSO0fD3lZsHkLb7Eq/xkA4LHmzvZ1q1bNfWmrBYciYdo2aBw==\",\"salt\":\"7U0z6KN5o0Sv0a3T7wM7Gw==\"}",
+      "credentialData" : "{\"hashIterations\":100000,\"algorithm\":\"pbkdf2-sha256\"}"
+    } ],
+    "realmRoles" : [ "USER" ]
+  }, {
+    "username" : "admin",
+    "enabled" : true,
+    "credentials" : [ {
+      "type" : "password",
+      "secretData" : "{\"value\":\"tX9g9xs4APy7eH3VRgzgkGZeeBqo+Mb1mlW2YXRfBNeaVN85pFAp54FsMYefaFNOa1F+cbxEjkg1O/p/XX05FQ==\",\"salt\":\"dvrAjc2Bm5hfC8NywmSFbw==\"}",
+      "credentialData" : "{\"hashIterations\":100000,\"algorithm\":\"pbkdf2-sha256\"}"
+    } ],
+    "realmRoles" : [ "ADMIN" ]
+  } ]
+}, {
+  "realm" : "master",
+  "users" : [ {
+    "username" : "admin",
+    "enabled" : true,
+    "credentials" : [ {
+      "type" : "password",
+      "secretData" : "{\"value\":\"xrYn4NN8bEqcY97TEkiynauxZ3lsSQnM04gMbKEu3tNC83JVxsh02LYkOy5hRAvrrQYfyohoae8zVHFKjpdbUA==\",\"salt\":\"Clv/1G0WU5zom4D1BwNz7w==\"}",
+      "credentialData" : "{\"hashIterations\":100000,\"algorithm\":\"pbkdf2-sha256\"}"
+    } ],
+    "realmRoles" : [ "admin" ]
+  }]
+} ]

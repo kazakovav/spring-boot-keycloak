@@ -1,0 +1,26 @@
+### Получим токен пользователя
+###
+POST http://localhost:8484/auth/realms/my_realm/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+client_id=my_client&grant_type=password&scope=openid&username=admin&password=admin
+
+
+> {% client.global.set("auth_token", response.body.access_token); %}
+
+###
+
+### проверим доступ к методу, доступному поьлзователю с ролью ADMIN
+GET http://localhost:8080/api/admin
+Authorization: Bearer {{auth_token}}
+Content-Type: application/json
+
+### проверим доступ к методу, доступному поьлзователю с ролью USER
+GET http://localhost:8080/api/user
+Authorization: Bearer {{auth_token}}
+Content-Type: application/json
+
+### получим информацию о пользователе
+GET http://localhost:8080/api/me
+Authorization: Bearer {{auth_token}}
+Content-Type: application/json

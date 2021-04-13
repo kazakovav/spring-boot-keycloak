@@ -1,0 +1,5 @@
+app:
+  keycloak:
+    auth-url: http://localhost:8484/auth/realms/my_realm/protocol/openid-connect
+    client-id: service_client
+    client-secret: acb719cf-4afd-42d3-91f2-93a60b3f2023
